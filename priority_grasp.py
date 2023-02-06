@@ -90,7 +90,7 @@ def get_and_process_rs_data(data_dir):
     
     #Camera intrinsic for realsense viewer data
     # meta = pd.read_csv("../realsense/36_Depth_metadata.csv")   
-    factor_depth = 2420. #1420. #stands for the scale for depth value to be transformed into meters. 
+    factor_depth = 1000. #1420. #stands for the scale for depth value to be transformed into meters. 
     # camera = CameraInfo(color.shape[1], color.shape[0], np.array(pd.to_numeric(meta.iloc[8][0])),  
     #                     np.array(pd.to_numeric(meta.iloc[9][0])), np.array(pd.to_numeric(meta.iloc[10][0])),
     #                     np.array(pd.to_numeric(meta.iloc[11][0])), factor_depth)
